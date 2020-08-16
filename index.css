@@ -1,0 +1,9 @@
+.display-numeros{
+    display:inline-block;
+}
+
+.valor-k{
+    position: relative;
+    top: -27px;
+    right: -59px;
+}
