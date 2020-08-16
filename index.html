@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Somatória</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src='index.js'></script>
-</head>
-<body>
-    <div class="div-principal" style="text-align: center;margin-top:20%;">
-        <input style="width: 10px;">
-        <h2 class="display-numeros">S = 10000 - </h2> 
-        <h1 class="display-numeros">Σ</h1>
-        <br><span class="valor-k">k=1</span><br>
-        <h2>F(10, 4, -5, 5)</h2>
-        <br>
-        <button>Calcular</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="div-principal" style="text-align: center; margin-top: 20%;margin-left: -250px;">
+      <span style="top: -40px; position: relative; right: -234px;">n = </span
+      ><input
+        id="valor-n"
+        style="width: 44px; position: relative; top: -40px; left: 238px;"
+      />
+      <span style="position: relative;
+      left: 222px;
+      top: -6px;">x = </span
+      ><input
+        id="valor-x"
+        style="width: 44px;
+        position: relative;
+        top: -6px;
+        left: 223px;"
+      />
+      <h2 class="display-numeros">S = 10000 -</h2>
+      <h1 class="display-numeros">Σ</h1>
+      <br /><span class="valor-k">k=1</span><br />
+      <h2 style="margin-left: 250px;">F(10, 4, -5, 5)</h2>
+      <br />
+      <button style="margin-left: 250px;" onclick="somaPrincipal()">Calcular</button>
     </div>
 
     <div class="div-resultados" style="text-align: center;">
-        <h2 class="display-numeros">Valor Arredondado: </h2> <span>0</span><br>
-        <h2 class="display-numeros">Valor Truncado: </h2> <span>0</span>
+      <h2 class="display-numeros">Valor Arredondado:</h2>
+      <span id="valor-arredondado">0</span><br />
+      <h2 class="display-numeros">Valor Truncado:</h2>
+      <span id="valor-truncado">0</span>
     </div>
-</body>
+  </body>
 </html>
